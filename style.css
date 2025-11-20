@@ -1,0 +1,341 @@
+*{
+margin: 0;
+padding: 0;
+/* box-sizing: border-box;*/
+} 
+
+/* Navbar Styles */
+.navbar {   
+   background-color:aliceblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 30px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   box-shadow: 10px 19px 19px rgba(0,0,0,0.2);
+}
+
+.me{
+padding-top: 50px;
+}
+
+.logo {
+   color:blue(215, 135, 235);
+   font-size: 30px;
+   font-weight: bold;
+   text-decoration:none;
+}
+
+.nav-links {
+   display: flex;
+   list-style: none;
+}
+
+.nav-links li {
+   margin-left: 20px;
+}
+
+.nav-links a {
+   color: rgb(196, 14, 14);
+   text-decoration: none;
+   font-size: 25px;
+   transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+   color:darkblue(215, 135, 235);
+}
+
+
+
+@media screen and (max-width: 768px) {
+   .nav-links {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 8vh;
+      background-color: #18111d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      padding-top: 20px;
+   }
+
+   .nav-links li {
+      margin: 20px 0;
+   }
+
+   .burger {
+      display: block;
+   }
+
+   .nav-active {
+      transform: translateX(0%);
+   }
+
+   /* Animation for burger menu */
+   .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+   }
+   .toggle .line2 {
+      opacity: 0;
+   }
+   .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .nav-links {
+      width: 70%;
+   }
+
+   .logo {
+      font-size: 25px;
+   }
+}
+
+        
+        /* Navbar Styles */
+.navbar {
+   background-color: aliceblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 25px 30px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   box-shadow: 10px 19px 19px rgba(0,0,0,0.2);
+}
+
+
+
+.nav-links {
+   display: flex;
+   list-style: none;
+}
+
+.nav-links li {
+   margin-left: 20px;
+}
+
+.nav-links a {
+   color: rgb(196, 14, 14);
+   text-decoration: none;
+   font-size: 25px;
+   transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+   color: rgb(0, 0, 139); /* Fixed darkblue color */
+}
+
+.burger {
+   display: none;
+   cursor: pointer;
+}
+
+.burger div {
+   width: 25px;
+   height: 3px;
+   background-color: white;
+   margin: 5px;
+   transition: all 0.3s ease;
+}
+
+.content {
+   padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+   .nav-links {
+       position: absolute;
+       right: 0;
+       height: 92vh;
+       top: 8vh;
+       background-color: #18111d;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+       padding-top: 20px;
+   }
+
+   .nav-links li {
+       margin: 20px 0;
+   }
+
+   .burger {
+       display: block;
+   }
+
+   .nav-active {
+       transform: translateX(0%);
+   }
+
+   /* Animation for burger menu */
+   .toggle .line1 {
+       transform: rotate(-45deg) translate(-5px, 6px);
+   }
+   .toggle .line2 {
+       opacity: 0;
+   }
+   .toggle .line3 {
+       transform: rotate(45deg) translate(-5px, -6px);
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .nav-links {
+       width: 70%;
+   }
+
+   .logo {
+       font-size: 25px;
+   }
+}
+
+
+  .hero {
+   background-image: url("images/IMG-20251107-WA0032.jpg");
+   left: 0;
+   background-size:cover;
+   background-position: center;
+   height: 100vh;
+   align-items: center;
+   text-align: center;
+   font-size: 30px; 
+   font-style:obliqu;
+   font-family:'Times New Roman', Times, serif; 
+   
+}
+
+ .hero-button {
+   display: flex;
+   height: 10h;
+   width: 120px;  
+   border-radius: 10px;
+   background-color:#581169;
+   align-items: center;
+   text-align: center;
+   font-size: 10px; 
+   font-size:small;
+   font-style:italic;
+   font-family:'Times New Roman', Times, serif;
+   left: 0;
+   background-size:cover;
+   background-position: center; 
+   
+}
+
+.my{
+   font-size: 40px;
+   padding: 20px;
+   margin: 20px;
+   text-align: center;
+}
+
+.works{
+display: flex;
+font-size: 200px;
+font-size: larger;
+font-style: italic;
+font-family: Georgia, 'Times New Roman', Times, serif;
+justify-content: space-between;
+ display: grid;
+   gap: 2rem;
+   margin-bottom: 3rem;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+
+}
+
+.my-work{
+   background:greenyellow;
+   border-radius: 8px;  
+}
+
+.work-content1{
+   padding: 10px;
+   margin:20px   
+}
+
+.work-content2{
+    padding: 10px;
+   margin:20px   
+}
+
+.work-content3{
+    padding: 10px;
+   margin:20px   
+}
+
+.hero-content{
+  font-size: 40px;
+   padding: 20px;
+   margin: 20px;
+   text-align: center; 
+}
+.about{
+display: flex;
+font-size: 200px;
+font-size: larger;
+font-style: italic;
+font-family: Georgia, 'Times New Roman', Times, serif;
+justify-content: space-between;
+ display: grid;
+   gap: 2rem;
+   margin-bottom: 3rem;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+}
+
+.my-about{
+    background:blueviolet;
+   border-radius: 8px;
+   
+
+}
+.about-me{
+   padding: 10px;
+   margin:20px 
+   
+}
+.image-work{
+    background:blueviolet;
+   border-radius: 8px;
+   
+}
+
+.us{
+  font-size: 40px;
+   padding: 20px;
+   margin: 20px;
+   text-align: center;  
+}
+
+.my-article{
+   text-align: center;
+   font-size: 200px;
+font-size: larger;
+font-style: italic;
+font-family: Georgia, 'Times New Roman', Times, serif;
+justify-content: space-between;
+      background:blueviolet;
+   border-radius: 120px;
+   padding: 10px;
+   margin:20px 
+   
+   
+    
+}
+
